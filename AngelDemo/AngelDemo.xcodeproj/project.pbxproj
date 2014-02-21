@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B004AAC218B75504003FA812 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B004AAC118B75504003FA812 /* CoreBluetooth.framework */; };
+		B004AAC518B757BE003FA812 /* Removeit.m in Sources */ = {isa = PBXBuildFile; fileRef = B004AAC418B757BE003FA812 /* Removeit.m */; };
 		B092B41E18B670A50013653D /* PairView.m in Sources */ = {isa = PBXBuildFile; fileRef = B092B41D18B670A50013653D /* PairView.m */; };
 		B092B42018B683370013653D /* angel app-03.png in Resources */ = {isa = PBXBuildFile; fileRef = B092B41F18B683370013653D /* angel app-03.png */; };
 		B092B42418B68ED70013653D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B092B42318B68ED70013653D /* Default.png */; };
@@ -47,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		B004AAC118B75504003FA812 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B004AAC318B757BE003FA812 /* Removeit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Removeit.h; path = AngelDemo/Removeit.h; sourceTree = "<group>"; };
+		B004AAC418B757BE003FA812 /* Removeit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Removeit.m; path = AngelDemo/Removeit.m; sourceTree = "<group>"; };
 		B092B41C18B670A50013653D /* PairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairView.h; sourceTree = "<group>"; };
 		B092B41D18B670A50013653D /* PairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairView.m; sourceTree = "<group>"; };
 		B092B41F18B683370013653D /* angel app-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angel app-03.png"; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 		B0C7102D18B65A5800245567 = {
 			isa = PBXGroup;
 			children = (
+				B004AAC318B757BE003FA812 /* Removeit.h */,
+				B004AAC418B757BE003FA812 /* Removeit.m */,
 				B092B42918B697A10013653D /* ZBarSDK */,
 				B0C7103F18B65A5800245567 /* AngelDemo */,
 				B0C7106118B65A5900245567 /* AngelDemoTests */,
@@ -390,6 +395,7 @@
 				B092B41E18B670A50013653D /* PairView.m in Sources */,
 				B0C7105318B65A5800245567 /* ViewController.m in Sources */,
 				B0C7104A18B65A5800245567 /* AppDelegate.m in Sources */,
+				B004AAC518B757BE003FA812 /* Removeit.m in Sources */,
 				B0C7104618B65A5800245567 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
