@@ -25,7 +25,7 @@
         self.m = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
         self.nDevices = [[NSMutableArray alloc]init];
         self.sensorTags = [[NSMutableArray alloc]init];
-        self.title = @"SensorTag Example";
+        //self.title = @"SensorTag Example";
     }
     return self;
 }
@@ -69,8 +69,8 @@
     // Return the number of rows in the section.
     return sensorTags.count;
 }
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+// this returns the Found tag object to the cell of the table, depends on how many tags found
+/*- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:[NSString stringWithFormat:@"%d_Cell",indexPath.row]];
     CBPeripheral *p = [self.sensorTags objectAtIndex:indexPath.row];
@@ -81,11 +81,23 @@
     
     return cell;
 }
-
+ 
+ */
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:[NSString stringWithFormat:@"%d_Cell",indexPath.row]];
+     //CBPeripheral *p = [self.sensorTags objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"ugur baba yapar"];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"adamin a.q"];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
+    return cell;
+}
 -(NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) {
-        if (self.sensorTags.count > 1 )return [NSString stringWithFormat:@"%d SensorTags Found",self.sensorTags.count];
-        else return [NSString stringWithFormat:@"%d SensorTag Found",self.sensorTags.count];
+        if (self.sensorTags.count > 1 )return [NSString stringWithFormat:@"%d Angel Found",self.sensorTags.count];
+        else return [NSString stringWithFormat:@"%d Angel Found",self.sensorTags.count];
     }
     
     return @"";

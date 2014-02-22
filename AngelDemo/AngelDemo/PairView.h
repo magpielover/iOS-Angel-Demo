@@ -7,11 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
+#import "BLEDevice.h"
+#import "SensorTagApplicationViewController.h"
 
-@interface PairView : UIViewController
+@interface PairView : UITableViewController <CBCentralManagerDelegate,CBPeripheralDelegate>
 {
-
+     IBOutlet UITableView *tagTable;
 }
 
-- (IBAction)Back:(id)sender;
+@property (strong,nonatomic) CBCentralManager *m;
+@property (strong,nonatomic) NSMutableArray *nDevices;
+@property (strong,nonatomic) NSMutableArray *sensorTags;
+
+
+
+-(NSMutableDictionary *) makeSensorTagConfiguration;
+
 @end
+

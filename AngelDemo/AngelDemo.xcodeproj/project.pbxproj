@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC28D85418B8C2CF0054DA9F /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = AC28D84918B8C2CF0054DA9F /* BLEDevice.m */; };
+		AC28D85518B8C2CF0054DA9F /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = AC28D84B18B8C2CF0054DA9F /* BLEUtility.m */; };
+		AC28D85618B8C2CF0054DA9F /* deviceCellTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC28D84D18B8C2CF0054DA9F /* deviceCellTemplate.m */; };
+		AC28D85718B8C2CF0054DA9F /* deviceSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = AC28D84F18B8C2CF0054DA9F /* deviceSelector.m */; };
+		AC28D85818B8C2CF0054DA9F /* Sensors.m in Sources */ = {isa = PBXBuildFile; fileRef = AC28D85118B8C2CF0054DA9F /* Sensors.m */; };
+		AC28D85918B8C2CF0054DA9F /* SensorTagApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC28D85318B8C2CF0054DA9F /* SensorTagApplicationViewController.m */; };
 		B004AAC218B75504003FA812 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B004AAC118B75504003FA812 /* CoreBluetooth.framework */; };
-		B06546F318B75E8B0021AF58 /* deviceSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = B06546F218B75E8B0021AF58 /* deviceSelector.m */; };
 		B06546F518B75EF30021AF58 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06546F418B75EF30021AF58 /* MessageUI.framework */; };
 		B092B41E18B670A50013653D /* PairView.m in Sources */ = {isa = PBXBuildFile; fileRef = B092B41D18B670A50013653D /* PairView.m */; };
-		B092B42018B683370013653D /* angel app-03.png in Resources */ = {isa = PBXBuildFile; fileRef = B092B41F18B683370013653D /* angel app-03.png */; };
+		B092B42018B683370013653D /* pair.png in Resources */ = {isa = PBXBuildFile; fileRef = B092B41F18B683370013653D /* pair.png */; };
 		B092B42418B68ED70013653D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B092B42318B68ED70013653D /* Default.png */; };
 		B092B42618B690EB0013653D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B092B42518B690EB0013653D /* MapKit.framework */; };
 		B092B42818B690F20013653D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B092B42718B690F20013653D /* CoreLocation.framework */; };
@@ -41,13 +46,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC28D84818B8C2CF0054DA9F /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEDevice.h; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/BLEDevice.h"; sourceTree = "<group>"; };
+		AC28D84918B8C2CF0054DA9F /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLEDevice.m; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/BLEDevice.m"; sourceTree = "<group>"; };
+		AC28D84A18B8C2CF0054DA9F /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEUtility.h; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/BLEUtility.h"; sourceTree = "<group>"; };
+		AC28D84B18B8C2CF0054DA9F /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLEUtility.m; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/BLEUtility.m"; sourceTree = "<group>"; };
+		AC28D84C18B8C2CF0054DA9F /* deviceCellTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deviceCellTemplate.h; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/deviceCellTemplate.h"; sourceTree = "<group>"; };
+		AC28D84D18B8C2CF0054DA9F /* deviceCellTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = deviceCellTemplate.m; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/deviceCellTemplate.m"; sourceTree = "<group>"; };
+		AC28D84E18B8C2CF0054DA9F /* deviceSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deviceSelector.h; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/deviceSelector.h"; sourceTree = "<group>"; };
+		AC28D84F18B8C2CF0054DA9F /* deviceSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = deviceSelector.m; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/deviceSelector.m"; sourceTree = "<group>"; };
+		AC28D85018B8C2CF0054DA9F /* Sensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sensors.h; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/Sensors.h"; sourceTree = "<group>"; };
+		AC28D85118B8C2CF0054DA9F /* Sensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sensors.m; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/Sensors.m"; sourceTree = "<group>"; };
+		AC28D85218B8C2CF0054DA9F /* SensorTagApplicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensorTagApplicationViewController.h; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/SensorTagApplicationViewController.h"; sourceTree = "<group>"; };
+		AC28D85318B8C2CF0054DA9F /* SensorTagApplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensorTagApplicationViewController.m; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/SensorTagApplicationViewController.m"; sourceTree = "<group>"; };
 		B004AAC118B75504003FA812 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		B06546F118B75E8B0021AF58 /* deviceSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deviceSelector.h; path = "../../../../../Applications/SensorTag iOS SourceCode/Sensor Example Source Code 1.1.0/SensorTagEX/deviceSelector.h"; sourceTree = "<group>"; };
-		B06546F218B75E8B0021AF58 /* deviceSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = deviceSelector.m; path = "../../../../../Applications/SensorTag iOS SourceCode/Sensor Example Source Code 1.1.0/SensorTagEX/deviceSelector.m"; sourceTree = "<group>"; };
 		B06546F418B75EF30021AF58 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B092B41C18B670A50013653D /* PairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairView.h; sourceTree = "<group>"; };
 		B092B41D18B670A50013653D /* PairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairView.m; sourceTree = "<group>"; };
-		B092B41F18B683370013653D /* angel app-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angel app-03.png"; sourceTree = "<group>"; };
+		B092B41F18B683370013653D /* pair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pair.png; sourceTree = "<group>"; };
 		B092B42318B68ED70013653D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images.xcassets/LaunchImage.launchimage/Default.png; sourceTree = "<group>"; };
 		B092B42518B690EB0013653D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B092B42718B690F20013653D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -101,8 +116,18 @@
 		B004AAC618B759E2003FA812 /* SensorTag */ = {
 			isa = PBXGroup;
 			children = (
-				B06546F118B75E8B0021AF58 /* deviceSelector.h */,
-				B06546F218B75E8B0021AF58 /* deviceSelector.m */,
+				AC28D84818B8C2CF0054DA9F /* BLEDevice.h */,
+				AC28D84918B8C2CF0054DA9F /* BLEDevice.m */,
+				AC28D84A18B8C2CF0054DA9F /* BLEUtility.h */,
+				AC28D84B18B8C2CF0054DA9F /* BLEUtility.m */,
+				AC28D84C18B8C2CF0054DA9F /* deviceCellTemplate.h */,
+				AC28D84D18B8C2CF0054DA9F /* deviceCellTemplate.m */,
+				AC28D84E18B8C2CF0054DA9F /* deviceSelector.h */,
+				AC28D84F18B8C2CF0054DA9F /* deviceSelector.m */,
+				AC28D85018B8C2CF0054DA9F /* Sensors.h */,
+				AC28D85118B8C2CF0054DA9F /* Sensors.m */,
+				AC28D85218B8C2CF0054DA9F /* SensorTagApplicationViewController.h */,
+				AC28D85318B8C2CF0054DA9F /* SensorTagApplicationViewController.m */,
 			);
 			name = SensorTag;
 			sourceTree = "<group>";
@@ -145,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				B092B42318B68ED70013653D /* Default.png */,
-				B092B41F18B683370013653D /* angel app-03.png */,
+				B092B41F18B683370013653D /* pair.png */,
 				B0C7104818B65A5800245567 /* AppDelegate.h */,
 				B0C7104918B65A5800245567 /* AppDelegate.m */,
 				B0C7104B18B65A5800245567 /* Main_iPhone.storyboard */,
@@ -218,6 +243,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Ugur Kirbac";
 				TargetAttributes = {
+					B0C7103518B65A5800245567 = {
+						DevelopmentTeam = 62J3L86HS3;
+					};
 					B0C7105918B65A5900245567 = {
 						TestTargetID = B0C7103518B65A5800245567;
 					};
@@ -247,7 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B092B42018B683370013653D /* angel app-03.png in Resources */,
+				B092B42018B683370013653D /* pair.png in Resources */,
 				B0C7105018B65A5800245567 /* Main_iPad.storyboard in Resources */,
 				B0C7105518B65A5900245567 /* Images.xcassets in Resources */,
 				B092B42418B68ED70013653D /* Default.png in Resources */,
@@ -270,11 +298,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC28D85918B8C2CF0054DA9F /* SensorTagApplicationViewController.m in Sources */,
+				AC28D85618B8C2CF0054DA9F /* deviceCellTemplate.m in Sources */,
+				AC28D85518B8C2CF0054DA9F /* BLEUtility.m in Sources */,
 				B092B41E18B670A50013653D /* PairView.m in Sources */,
-				B06546F318B75E8B0021AF58 /* deviceSelector.m in Sources */,
+				AC28D85418B8C2CF0054DA9F /* BLEDevice.m in Sources */,
+				AC28D85718B8C2CF0054DA9F /* deviceSelector.m in Sources */,
 				B0C7105318B65A5800245567 /* ViewController.m in Sources */,
 				B0C7104A18B65A5800245567 /* AppDelegate.m in Sources */,
 				B0C7104618B65A5800245567 /* main.m in Sources */,
+				AC28D85818B8C2CF0054DA9F /* Sensors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +434,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AngelDemo/AngelDemo-Prefix.pch";
 				INFOPLIST_FILE = "AngelDemo/AngelDemo-Info.plist";
@@ -410,6 +444,7 @@
 					"/Users/ugurkirbac/Desktop/iOS\\ Angel\\ Demo/AngelDemo/AngelDemo/ZBarSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -419,7 +454,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AngelDemo/AngelDemo-Prefix.pch";
 				INFOPLIST_FILE = "AngelDemo/AngelDemo-Info.plist";
@@ -428,6 +464,7 @@
 					"/Users/ugurkirbac/Desktop/iOS\\ Angel\\ Demo/AngelDemo/AngelDemo/ZBarSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

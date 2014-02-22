@@ -12,17 +12,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+   /* self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];*/
     // Override point for customization after application launch.
     
     
-    
+    /*
     deviceSelector *dS = [[deviceSelector alloc]initWithStyle:UITableViewStyleGrouped];
     
     UINavigationController *rC = [[UINavigationController alloc]initWithRootViewController:dS];
     
     self.window.rootViewController = rC;
-    [self.window makeKeyAndVisible];
+    [self.window makeKeyAndVisible];*/
     return YES;
 }
 							
