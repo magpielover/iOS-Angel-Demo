@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1FE6D097-1D47-4139-B983-50AD91486562</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SensorTagEX</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ADEEA70C-E6E3-49CC-BDBE-23BC67E53F46</key>
+		<string>ssh://admin.stalliance.no//media/Elements/GIT/Software/iOS_Projects/SensorTagEx.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SensorTagEX.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ADEEA70C-E6E3-49CC-BDBE-23BC67E53F46</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://admin.stalliance.no//media/Elements/GIT/Software/iOS_Projects/SensorTagEx.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ADEEA70C-E6E3-49CC-BDBE-23BC67E53F46</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ADEEA70C-E6E3-49CC-BDBE-23BC67E53F46</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SensorTagEx</string>
+		</dict>
+	</array>
+</dict>
+</plist>

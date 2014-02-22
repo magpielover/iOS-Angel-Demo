@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F38C308169AEFF000E239F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F38C307169AEFF000E239F9 /* UIKit.framework */; };
+		7F38C30A169AEFF000E239F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F38C309169AEFF000E239F9 /* Foundation.framework */; };
+		7F38C30C169AEFF000E239F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F38C30B169AEFF000E239F9 /* CoreGraphics.framework */; };
+		7F38C312169AEFF000E239F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F38C310169AEFF000E239F9 /* InfoPlist.strings */; };
+		7F38C314169AEFF000E239F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F38C313169AEFF000E239F9 /* main.m */; };
+		7F38C318169AEFF000E239F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F38C317169AEFF000E239F9 /* AppDelegate.m */; };
+		7F38C31A169AEFF000E239F9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F38C319169AEFF000E239F9 /* Default.png */; };
+		7F38C31C169AEFF000E239F9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F38C31B169AEFF000E239F9 /* Default@2x.png */; };
+		7F38C31E169AEFF000E239F9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F38C31D169AEFF000E239F9 /* Default-568h@2x.png */; };
+		7F38C321169AEFF000E239F9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F38C31F169AEFF000E239F9 /* MainStoryboard_iPhone.storyboard */; };
+		7F38C324169AEFF000E239F9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F38C322169AEFF000E239F9 /* MainStoryboard_iPad.storyboard */; };
+		7F38C327169AEFF000E239F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F38C326169AEFF000E239F9 /* ViewController.m */; };
+		7F38C32E169AF4A100E239F9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F38C32D169AF4A100E239F9 /* CoreBluetooth.framework */; };
+		7F38C331169AF52800E239F9 /* deviceSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F38C330169AF52800E239F9 /* deviceSelectorViewController.m */; };
+		7F38C39A169B0F4500E239F9 /* SensorTagImgA.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7F38C398169B0F4400E239F9 /* SensorTagImgA.bin */; };
+		7F38C39B169B0F4500E239F9 /* SensorTagImgB.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7F38C399169B0F4500E239F9 /* SensorTagImgB.bin */; };
+		7F6A7804169B116A00DF5A5C /* BLETIOADProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6A7802169B116A00DF5A5C /* BLETIOADProfile.m */; };
+		7F6A7805169B116A00DF5A5C /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6A7803169B116A00DF5A5C /* BLEDevice.m */; };
+		7F6A780B169B11F800DF5A5C /* BLETIOADProgressDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6A7808169B11F800DF5A5C /* BLETIOADProgressDialog.m */; };
+		7F6A780C169B11F800DF5A5C /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6A780A169B11F800DF5A5C /* BLEUtility.m */; };
+		7F91234A16D3A19000549155 /* icon@2x_144.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F91234816D3A19000549155 /* icon@2x_144.png */; };
+		7F91234B16D3A19000549155 /* icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F91234916D3A19000549155 /* icon_72.png */; };
+		7F91235316D3A1F700549155 /* icon_57@2x_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F91235116D3A1F700549155 /* icon_57@2x_114.png */; };
+		7F91235916D3A23300549155 /* icon_57@2x_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F91235816D3A23300549155 /* icon_57@2x_114.png */; };
+		7F91235B16D3A23D00549155 /* icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F91235A16D3A23D00549155 /* icon_72.png */; };
+		7F91235D16D3A24100549155 /* icon@2x_144.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F91235C16D3A24100549155 /* icon@2x_144.png */; };
+		7FAF805516D3DD930007FB32 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF805416D3DD930007FB32 /* icon_57.png */; };
+		7FB5602618154055005B41CC /* BLETIOADProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB5602518154055005B41CC /* BLETIOADProgressViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F38C303169AEFF000E239F9 /* TIOADExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIOADExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F38C307169AEFF000E239F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F38C309169AEFF000E239F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F38C30B169AEFF000E239F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F38C30F169AEFF000E239F9 /* TIOADExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TIOADExample-Info.plist"; sourceTree = "<group>"; };
+		7F38C311169AEFF000E239F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F38C313169AEFF000E239F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F38C315169AEFF000E239F9 /* TIOADExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TIOADExample-Prefix.pch"; sourceTree = "<group>"; };
+		7F38C316169AEFF000E239F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F38C317169AEFF000E239F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F38C319169AEFF000E239F9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7F38C31B169AEFF000E239F9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7F38C31D169AEFF000E239F9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7F38C320169AEFF000E239F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		7F38C323169AEFF000E239F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		7F38C325169AEFF000E239F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7F38C326169AEFF000E239F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7F38C32D169AF4A100E239F9 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		7F38C32F169AF52800E239F9 /* deviceSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deviceSelectorViewController.h; sourceTree = "<group>"; };
+		7F38C330169AF52800E239F9 /* deviceSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deviceSelectorViewController.m; sourceTree = "<group>"; };
+		7F38C395169B0CA900E239F9 /* oad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oad.h; sourceTree = "<group>"; };
+		7F38C398169B0F4400E239F9 /* SensorTagImgA.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = SensorTagImgA.bin; sourceTree = "<group>"; };
+		7F38C399169B0F4500E239F9 /* SensorTagImgB.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = SensorTagImgB.bin; sourceTree = "<group>"; };
+		7F6A7800169B116A00DF5A5C /* BLETIOADProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLETIOADProfile.h; sourceTree = "<group>"; };
+		7F6A7801169B116A00DF5A5C /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
+		7F6A7802169B116A00DF5A5C /* BLETIOADProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLETIOADProfile.m; sourceTree = "<group>"; };
+		7F6A7803169B116A00DF5A5C /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
+		7F6A7807169B11F800DF5A5C /* BLETIOADProgressDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLETIOADProgressDialog.h; sourceTree = "<group>"; };
+		7F6A7808169B11F800DF5A5C /* BLETIOADProgressDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLETIOADProgressDialog.m; sourceTree = "<group>"; };
+		7F6A7809169B11F800DF5A5C /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		7F6A780A169B11F800DF5A5C /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
+		7F91234816D3A19000549155 /* icon@2x_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x_144.png"; sourceTree = "<group>"; };
+		7F91234916D3A19000549155 /* icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_72.png; sourceTree = "<group>"; };
+		7F91235016D3A1F700549155 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
+		7F91235116D3A1F700549155 /* icon_57@2x_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_57@2x_114.png"; sourceTree = "<group>"; };
+		7F91235816D3A23300549155 /* icon_57@2x_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_57@2x_114.png"; sourceTree = "<group>"; };
+		7F91235A16D3A23D00549155 /* icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_72.png; sourceTree = "<group>"; };
+		7F91235C16D3A24100549155 /* icon@2x_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x_144.png"; sourceTree = "<group>"; };
+		7FAF805416D3DD930007FB32 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
+		7FB5602418154055005B41CC /* BLETIOADProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLETIOADProgressViewController.h; sourceTree = "<group>"; };
+		7FB5602518154055005B41CC /* BLETIOADProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLETIOADProgressViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F38C300169AEFF000E239F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F38C32E169AF4A100E239F9 /* CoreBluetooth.framework in Frameworks */,
+				7F38C308169AEFF000E239F9 /* UIKit.framework in Frameworks */,
+				7F38C30A169AEFF000E239F9 /* Foundation.framework in Frameworks */,
+				7F38C30C169AEFF000E239F9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F38C2F8169AEFF000E239F9 = {
+			isa = PBXGroup;
+			children = (
+				7FAF805416D3DD930007FB32 /* icon_57.png */,
+				7F91235C16D3A24100549155 /* icon@2x_144.png */,
+				7F91235A16D3A23D00549155 /* icon_72.png */,
+				7F91235816D3A23300549155 /* icon_57@2x_114.png */,
+				7F38C30D169AEFF000E239F9 /* TIOADExample */,
+				7F38C306169AEFF000E239F9 /* Frameworks */,
+				7F38C304169AEFF000E239F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F38C304169AEFF000E239F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F38C303169AEFF000E239F9 /* TIOADExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F38C306169AEFF000E239F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F38C32D169AF4A100E239F9 /* CoreBluetooth.framework */,
+				7F38C307169AEFF000E239F9 /* UIKit.framework */,
+				7F38C309169AEFF000E239F9 /* Foundation.framework */,
+				7F38C30B169AEFF000E239F9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F38C30D169AEFF000E239F9 /* TIOADExample */ = {
+			isa = PBXGroup;
+			children = (
+				7F91234716D3A19000549155 /* Images */,
+				7F6A7820169B2F9400DF5A5C /* Application */,
+				7F6A781F169B2F8700DF5A5C /* Device Selection */,
+				7F6A781D169B2F6500DF5A5C /* TI OAD Profile */,
+				7F6A781B169B2F2700DF5A5C /* Integrated Firmware Files */,
+				7F6A781E169B2F7A00DF5A5C /* Storyboards */,
+				7F38C30E169AEFF000E239F9 /* Supporting Files */,
+			);
+			path = TIOADExample;
+			sourceTree = "<group>";
+		};
+		7F38C30E169AEFF000E239F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F38C30F169AEFF000E239F9 /* TIOADExample-Info.plist */,
+				7F38C310169AEFF000E239F9 /* InfoPlist.strings */,
+				7F38C313169AEFF000E239F9 /* main.m */,
+				7F38C315169AEFF000E239F9 /* TIOADExample-Prefix.pch */,
+				7F38C319169AEFF000E239F9 /* Default.png */,
+				7F38C31B169AEFF000E239F9 /* Default@2x.png */,
+				7F38C31D169AEFF000E239F9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F6A781B169B2F2700DF5A5C /* Integrated Firmware Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F38C398169B0F4400E239F9 /* SensorTagImgA.bin */,
+				7F38C399169B0F4500E239F9 /* SensorTagImgB.bin */,
+			);
+			name = "Integrated Firmware Files";
+			sourceTree = "<group>";
+		};
+		7F6A781D169B2F6500DF5A5C /* TI OAD Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7FB5602418154055005B41CC /* BLETIOADProgressViewController.h */,
+				7FB5602518154055005B41CC /* BLETIOADProgressViewController.m */,
+				7F38C395169B0CA900E239F9 /* oad.h */,
+				7F6A7807169B11F800DF5A5C /* BLETIOADProgressDialog.h */,
+				7F6A7808169B11F800DF5A5C /* BLETIOADProgressDialog.m */,
+				7F6A7809169B11F800DF5A5C /* BLEUtility.h */,
+				7F6A780A169B11F800DF5A5C /* BLEUtility.m */,
+				7F6A7800169B116A00DF5A5C /* BLETIOADProfile.h */,
+				7F6A7801169B116A00DF5A5C /* BLEDevice.h */,
+				7F6A7802169B116A00DF5A5C /* BLETIOADProfile.m */,
+				7F6A7803169B116A00DF5A5C /* BLEDevice.m */,
+			);
+			name = "TI OAD Profile";
+			sourceTree = "<group>";
+		};
+		7F6A781E169B2F7A00DF5A5C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7F38C31F169AEFF000E239F9 /* MainStoryboard_iPhone.storyboard */,
+				7F38C322169AEFF000E239F9 /* MainStoryboard_iPad.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		7F6A781F169B2F8700DF5A5C /* Device Selection */ = {
+			isa = PBXGroup;
+			children = (
+				7F38C32F169AF52800E239F9 /* deviceSelectorViewController.h */,
+				7F38C330169AF52800E239F9 /* deviceSelectorViewController.m */,
+			);
+			name = "Device Selection";
+			sourceTree = "<group>";
+		};
+		7F6A7820169B2F9400DF5A5C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7F38C325169AEFF000E239F9 /* ViewController.h */,
+				7F38C326169AEFF000E239F9 /* ViewController.m */,
+				7F38C316169AEFF000E239F9 /* AppDelegate.h */,
+				7F38C317169AEFF000E239F9 /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		7F91234716D3A19000549155 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7F91235016D3A1F700549155 /* icon_57.png */,
+				7F91235116D3A1F700549155 /* icon_57@2x_114.png */,
+				7F91234816D3A19000549155 /* icon@2x_144.png */,
+				7F91234916D3A19000549155 /* icon_72.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F38C302169AEFF000E239F9 /* TIOADExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F38C32A169AEFF100E239F9 /* Build configuration list for PBXNativeTarget "TIOADExample" */;
+			buildPhases = (
+				7F38C2FF169AEFF000E239F9 /* Sources */,
+				7F38C300169AEFF000E239F9 /* Frameworks */,
+				7F38C301169AEFF000E239F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TIOADExample;
+			productName = TIOADExample;
+			productReference = 7F38C303169AEFF000E239F9 /* TIOADExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F38C2FA169AEFF000E239F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Texas Instruments";
+			};
+			buildConfigurationList = 7F38C2FD169AEFF000E239F9 /* Build configuration list for PBXProject "TIOADExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F38C2F8169AEFF000E239F9;
+			productRefGroup = 7F38C304169AEFF000E239F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F38C302169AEFF000E239F9 /* TIOADExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F38C301169AEFF000E239F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F38C312169AEFF000E239F9 /* InfoPlist.strings in Resources */,
+				7F38C31A169AEFF000E239F9 /* Default.png in Resources */,
+				7F38C31C169AEFF000E239F9 /* Default@2x.png in Resources */,
+				7F38C31E169AEFF000E239F9 /* Default-568h@2x.png in Resources */,
+				7F38C321169AEFF000E239F9 /* MainStoryboard_iPhone.storyboard in Resources */,
+				7F38C324169AEFF000E239F9 /* MainStoryboard_iPad.storyboard in Resources */,
+				7F38C39A169B0F4500E239F9 /* SensorTagImgA.bin in Resources */,
+				7F38C39B169B0F4500E239F9 /* SensorTagImgB.bin in Resources */,
+				7F91234A16D3A19000549155 /* icon@2x_144.png in Resources */,
+				7F91234B16D3A19000549155 /* icon_72.png in Resources */,
+				7F91235316D3A1F700549155 /* icon_57@2x_114.png in Resources */,
+				7F91235916D3A23300549155 /* icon_57@2x_114.png in Resources */,
+				7F91235B16D3A23D00549155 /* icon_72.png in Resources */,
+				7F91235D16D3A24100549155 /* icon@2x_144.png in Resources */,
+				7FAF805516D3DD930007FB32 /* icon_57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F38C2FF169AEFF000E239F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F38C314169AEFF000E239F9 /* main.m in Sources */,
+				7F38C318169AEFF000E239F9 /* AppDelegate.m in Sources */,
+				7F38C327169AEFF000E239F9 /* ViewController.m in Sources */,
+				7F38C331169AF52800E239F9 /* deviceSelectorViewController.m in Sources */,
+				7F6A7804169B116A00DF5A5C /* BLETIOADProfile.m in Sources */,
+				7F6A7805169B116A00DF5A5C /* BLEDevice.m in Sources */,
+				7F6A780B169B11F800DF5A5C /* BLETIOADProgressDialog.m in Sources */,
+				7F6A780C169B11F800DF5A5C /* BLEUtility.m in Sources */,
+				7FB5602618154055005B41CC /* BLETIOADProgressViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F38C310169AEFF000E239F9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F38C311169AEFF000E239F9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F38C31F169AEFF000E239F9 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F38C320169AEFF000E239F9 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		7F38C322169AEFF000E239F9 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F38C323169AEFF000E239F9 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F38C328169AEFF000E239F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F38C329169AEFF000E239F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F38C32B169AEFF100E239F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TIOADExample/TIOADExample-Prefix.pch";
+				INFOPLIST_FILE = "TIOADExample/TIOADExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F38C32C169AEFF100E239F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TIOADExample/TIOADExample-Prefix.pch";
+				INFOPLIST_FILE = "TIOADExample/TIOADExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F38C2FD169AEFF000E239F9 /* Build configuration list for PBXProject "TIOADExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F38C328169AEFF000E239F9 /* Debug */,
+				7F38C329169AEFF000E239F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F38C32A169AEFF100E239F9 /* Build configuration list for PBXNativeTarget "TIOADExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F38C32B169AEFF100E239F9 /* Debug */,
+				7F38C32C169AEFF100E239F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F38C2FA169AEFF000E239F9 /* Project object */;
+}
