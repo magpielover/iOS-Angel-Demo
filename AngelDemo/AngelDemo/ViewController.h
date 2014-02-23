@@ -14,6 +14,7 @@ IBOutlet UITextField *usernameField;
 IBOutlet UITextField *passwordField;
     NSDictionary *credentialsDictionary;
 }
+
 - (IBAction)enterCredentials;
 - (IBAction)backgroundTouched;
 

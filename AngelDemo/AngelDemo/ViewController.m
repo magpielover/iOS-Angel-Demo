@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
 	self.title = NSLocalizedString(@"AngelApp Demo", nil);
-    credentialsDictionary = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"password", @"1234", nil] forKeys:[NSArray arrayWithObjects:@"username",@"alex", nil]];
+    credentialsDictionary = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"11", @"1234", nil] forKeys:[NSArray arrayWithObjects:@"aa",@"alex", nil]];
 }
 
 - (IBAction)enterCredentials

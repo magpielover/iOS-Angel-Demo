@@ -26,6 +26,7 @@
         self.m = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
         self.nDevices = [[NSMutableArray alloc]init];
         self.sensorTags = [[NSMutableArray alloc]init];
+        [self.m  scanForPeripheralsWithServices:nil options:nil];
 
 
         NSLog(@"PairViewCreated");
@@ -69,6 +70,10 @@
 }
 
 
+-(void) viewWillAppear:(BOOL)animated {
+    self.m.delegate = self;
+    
+}
 
 #pragma mark - Table view delegate
 
@@ -125,6 +130,7 @@
 
 -(void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
     [peripheral discoverServices:nil];
+         NSLog(@"dicConnectPeripheral girdi");
 }
 
 #pragma  mark - CBPeripheral delegate

@@ -50,6 +50,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="td4-zH-8pU" kind="modal" id="XTx-BS-P7w"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.30533491808814495" green="0.47450980392156861" blue="0.29137113896076977" alpha="0.38" colorSpace="calibratedRGB"/>
@@ -313,8 +316,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ndZ-Mt-66v"/>
-        <segue reference="RGZ-vi-FzS"/>
         <segue reference="i9I-9r-YBF"/>
+        <segue reference="7Wd-iA-Edn"/>
+        <segue reference="RGZ-vi-FzS"/>
     </inferredMetricsTieBreakers>
 </document>
