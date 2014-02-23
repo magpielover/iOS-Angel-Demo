@@ -7,7 +7,7 @@
 //
 
 #import "PairView.h"
-
+#import "deviceSelector.h"
 @interface PairView ()
 
 @end
@@ -15,102 +15,60 @@
 @implementation PairView
 @synthesize m,nDevices,sensorTags;
 
+-(id)init{
+    
+  
 
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
+    self =[super init];
+    {
+        // superclass successfully initialized, further
+        // initialization happens here ...
         self.m = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
         self.nDevices = [[NSMutableArray alloc]init];
         self.sensorTags = [[NSMutableArray alloc]init];
-        //self.title = @"SensorTag Example";
+
+
+        NSLog(@"PairViewCreated");
+        
     }
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    self.m = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
-    self.nDevices = [[NSMutableArray alloc]init];
-    self.sensorTags = [[NSMutableArray alloc]init];
+/*
+- (IBAction)makeVisible{
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [angelIcon setHidden:NO];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)makeInvisible{
+
+    [angelIcon setHidden:YES];
+
 }
-
--(void) viewWillAppear:(BOOL)animated {
-    self.m.delegate = self;
-    
-}
-
-
-
-
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
-    return sensorTags.count;
-}
-// this returns the Found tag object to the cell of the table, depends on how many tags found
-/*- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
- {
- UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:[NSString stringWithFormat:@"%d_Cell",indexPath.row]];
- CBPeripheral *p = [self.sensorTags objectAtIndex:indexPath.row];
- 
- cell.textLabel.text = [NSString stringWithFormat:@"%@",p.name];
- cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",CFUUIDCreateString(nil, p.UUID)];
- cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
- 
- return cell;
- }
- 
  */
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+
+- (IBAction)hideIcon{
+
  
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:[NSString stringWithFormat:@"%d_Cell",indexPath.row]];
-    CBPeripheral *p = [self.sensorTags objectAtIndex:indexPath.row];
+     [angelIcon setHidden:YES];
+       NSLog(@"Icon hidden");
 
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    
-    [button addTarget:self
-               action:@selector(aMethod:)
-     forControlEvents:UIControlEventTouchDown];
-    
-    [button setTitle:@"Show View" forState:UIControlStateNormal];
-    button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
-    [cell.contentView addSubview:button];
-    
-    cell.imageView.image =@"pair.png";
-    cell.textLabel.text = @"UGUR BABAB";
-    return cell;
 }
 
--(float) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 150.0f;
+
+- (IBAction)showIcon{
+    
+     [angelIcon setHidden:NO];
+     NSLog(@"Icon shown");
+    
 }
+
+- (IBAction)switchView:(id)sender {
+    PairView *pairview = [[PairView alloc] init];
+    [self presentViewController:pairview animated:YES completion:NULL];
+}
+
+
 
 #pragma mark - Table view delegate
 
@@ -194,7 +152,8 @@
         }
         if (!replace) {
             [self.sensorTags addObject:peripheral];
-            [self.tableView reloadData];
+           // [self.tableView reloadData];
+            // SHOULD BE WRITTEN UGUR ----
         }
     }
 }
@@ -258,5 +217,6 @@
     
     return d;
 }
+
 
 @end

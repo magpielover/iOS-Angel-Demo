@@ -11,16 +11,23 @@
 #import "BLEDevice.h"
 #import "SensorTagApplicationViewController.h"
 
-@interface PairView : UITableViewController <CBCentralManagerDelegate,CBPeripheralDelegate>
-{
+@interface PairView : UIViewController <CBCentralManagerDelegate,CBPeripheralDelegate>{
      IBOutlet UITableView *tagTable;
+    IBOutlet UIButton *angelIcon;
+   
 }
 
 @property (strong,nonatomic) CBCentralManager *m;
 @property (strong,nonatomic) NSMutableArray *nDevices;
 @property (strong,nonatomic) NSMutableArray *sensorTags;
 
-
+/*
+- (IBAction)makeVisible:(id)sender;
+- (IBAction)makeInvisible:(id)sender;
+ */
+- (IBAction)switchView:(id)sender;
+- (IBAction)showIcon;
+- (IBAction)hideIcon;
 
 -(NSMutableDictionary *) makeSensorTagConfiguration;
 

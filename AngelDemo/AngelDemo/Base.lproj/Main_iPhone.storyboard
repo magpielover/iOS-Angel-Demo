@@ -50,9 +50,6 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="P3v-IJ-WXs" kind="modal" id="7g9-Hp-hAR"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.30533491808814495" green="0.47450980392156861" blue="0.29137113896076977" alpha="0.38" colorSpace="calibratedRGB"/>
@@ -63,6 +60,7 @@
                     <connections>
                         <outlet property="passwordField" destination="VHB-iH-mFy" id="txl-5e-mJV"/>
                         <outlet property="usernameField" destination="xaz-cn-U4v" id="waw-XV-x0D"/>
+                        <segue destination="td4-zH-8pU" kind="modal" identifier="NextView" id="ndZ-Mt-66v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -70,37 +68,9 @@
             <point key="canvasLocation" x="-659" y="-2014"/>
         </scene>
         <!--Pair View-->
-        <scene sceneID="tSI-eN-Mzu">
-            <objects>
-                <tableViewController id="P3v-IJ-WXs" customClass="PairView" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Es0-Vm-meF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="WLP-zq-b8s">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WLP-zq-b8s" id="WZv-EL-lx9">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="P3v-IJ-WXs" id="7gI-vx-brV"/>
-                            <outlet property="delegate" destination="P3v-IJ-WXs" id="YR8-n6-v1J"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MLa-LD-7EF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-485" y="-1313"/>
-        </scene>
-        <!--Pair View-->
         <scene sceneID="SHM-Yi-CVY">
             <objects>
-                <viewController id="td4-zH-8pU" customClass="PairView" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PairViewID" id="td4-zH-8pU" customClass="PairView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mxd-jD-P7i"/>
                         <viewControllerLayoutGuide type="bottom" id="5SW-iz-0s5"/>
@@ -109,8 +79,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angel app-03.png" translatesAutoresizingMaskIntoConstraints="NO" id="DsI-yA-Ree">
-                                <rect key="frame" x="55" y="6" width="210" height="340"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pair.png" translatesAutoresizingMaskIntoConstraints="NO" id="DsI-yA-Ree">
+                                <rect key="frame" x="69" y="20" width="208" height="397"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTk-xU-LVh">
@@ -123,30 +93,42 @@
                                     <segue destination="Peh-0z-qQr" kind="modal" id="RGZ-vi-FzS"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mUy-wt-x1V">
-                                <rect key="frame" x="0.0" y="306" width="320" height="97"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tagCell" id="UfL-9J-IR4">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UfL-9J-IR4">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2x-vf-i0T">
+                                <rect key="frame" x="151" y="478" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="show">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <outlet property="dataSource" destination="td4-zH-8pU" id="kcw-A8-5UX"/>
-                                    <outlet property="delegate" destination="td4-zH-8pU" id="mwt-Lo-2ZA"/>
+                                    <action selector="showIcon" destination="pIa-EC-sr7" eventType="touchUpInside" id="hg1-6x-fQY"/>
                                 </connections>
-                            </tableView>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQ5-nz-dfM">
+                                <rect key="frame" x="69" y="478" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="hide">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideIcon" destination="pIa-EC-sr7" eventType="touchUpInside" id="30e-aT-V77"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL6-wT-qfn">
+                                <rect key="frame" x="100" y="312" width="110" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="angel2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zwZ-kb-0rF" kind="modal" id="i9I-9r-YBF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="tagTable" destination="mUy-wt-x1V" id="v7I-A6-bss"/>
+                        <outlet property="angelIcon" destination="EL6-wT-qfn" id="Xn2-s4-GOG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIa-EC-sr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -177,6 +159,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="zwZ-kb-0rF" kind="modal" id="t1c-aU-FTK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wle-CK-KE7">
+                                <rect key="frame" x="25" y="20" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="td4-zH-8pU" kind="modal" id="7Wd-iA-Edn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -312,7 +304,8 @@
     </scenes>
     <resources>
         <image name="Default.png" width="320" height="568"/>
-        <image name="angel app-03.png" width="320" height="568"/>
+        <image name="angel2.png" width="64" height="64"/>
+        <image name="pair.png" width="320" height="568"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -320,6 +313,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="ndZ-Mt-66v"/>
         <segue reference="RGZ-vi-FzS"/>
+        <segue reference="i9I-9r-YBF"/>
     </inferredMetricsTieBreakers>
 </document>

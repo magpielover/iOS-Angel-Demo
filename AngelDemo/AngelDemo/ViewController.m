@@ -29,7 +29,7 @@
     if ([[credentialsDictionary objectForKey:usernameField.text]isEqualToString:passwordField.text]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Correct Password" message:@"This password is correct." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
         //[alert show];
-        [self switchView:nil];
+        [self switchView];
     }
     else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Incorrect Password" message:@"This password is incorrect." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
@@ -44,9 +44,12 @@
     
 }
 
-- (IBAction)switchView:(id)sender {
-    PairView *pairview = [[PairView alloc]  initWithNibName:nil bundle:nil];
-    [self presentViewController:pairview animated:YES completion:NULL];
+- (void)switchView{
+ 
+     PairView *pairview = [[PairView alloc]  init];
+    //[self presentViewController:pairview animated:YES completion:NULL];
+    
+    [self performSegueWithIdentifier:@"NextView" sender:self];
 }
 
 

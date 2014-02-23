@@ -16,5 +16,5 @@ IBOutlet UITextField *passwordField;
 }
 - (IBAction)enterCredentials;
 - (IBAction)backgroundTouched;
-- (IBAction)switchView:(id)sender;
+
 @end

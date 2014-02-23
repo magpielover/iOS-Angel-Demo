@@ -94,6 +94,8 @@
     
     return cell;
 }
+
+
 -(NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) {
         if (self.sensorTags.count > 1 )return [NSString stringWithFormat:@"%d Angel Found",self.sensorTags.count];

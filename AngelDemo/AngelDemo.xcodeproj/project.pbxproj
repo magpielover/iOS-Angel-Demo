@@ -13,6 +13,10 @@
 		AC28D85718B8C2CF0054DA9F /* deviceSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = AC28D84F18B8C2CF0054DA9F /* deviceSelector.m */; };
 		AC28D85818B8C2CF0054DA9F /* Sensors.m in Sources */ = {isa = PBXBuildFile; fileRef = AC28D85118B8C2CF0054DA9F /* Sensors.m */; };
 		AC28D85918B8C2CF0054DA9F /* SensorTagApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC28D85318B8C2CF0054DA9F /* SensorTagApplicationViewController.m */; };
+		ACEDC7F418BA0AB100A96FB5 /* angelIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEDC7F318BA0AB100A96FB5 /* angelIcon.png */; };
+		ACEDC7F618BA0B0800A96FB5 /* angel2.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEDC7F518BA0B0800A96FB5 /* angel2.png */; };
+		ACEDC7F718BA2CB800A96FB5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C7104B18B65A5800245567 /* Main_iPhone.storyboard */; };
+		ACEDC7F818BA2CB800A96FB5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C7104E18B65A5800245567 /* Main_iPad.storyboard */; };
 		B004AAC218B75504003FA812 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B004AAC118B75504003FA812 /* CoreBluetooth.framework */; };
 		B06546F518B75EF30021AF58 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06546F418B75EF30021AF58 /* MessageUI.framework */; };
 		B092B41E18B670A50013653D /* PairView.m in Sources */ = {isa = PBXBuildFile; fileRef = B092B41D18B670A50013653D /* PairView.m */; };
@@ -26,8 +30,6 @@
 		B0C7104418B65A5800245567 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0C7104218B65A5800245567 /* InfoPlist.strings */; };
 		B0C7104618B65A5800245567 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C7104518B65A5800245567 /* main.m */; };
 		B0C7104A18B65A5800245567 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C7104918B65A5800245567 /* AppDelegate.m */; };
-		B0C7104D18B65A5800245567 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C7104B18B65A5800245567 /* Main_iPhone.storyboard */; };
-		B0C7105018B65A5800245567 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C7104E18B65A5800245567 /* Main_iPad.storyboard */; };
 		B0C7105318B65A5800245567 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C7105218B65A5800245567 /* ViewController.m */; };
 		B0C7105518B65A5900245567 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C7105418B65A5800245567 /* Images.xcassets */; };
 		B0C7105C18B65A5900245567 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C7105B18B65A5900245567 /* XCTest.framework */; };
@@ -58,6 +60,8 @@
 		AC28D85118B8C2CF0054DA9F /* Sensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sensors.m; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/Sensors.m"; sourceTree = "<group>"; };
 		AC28D85218B8C2CF0054DA9F /* SensorTagApplicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensorTagApplicationViewController.h; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/SensorTagApplicationViewController.h"; sourceTree = "<group>"; };
 		AC28D85318B8C2CF0054DA9F /* SensorTagApplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensorTagApplicationViewController.m; path = "../SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX/SensorTagApplicationViewController.m"; sourceTree = "<group>"; };
+		ACEDC7F318BA0AB100A96FB5 /* angelIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = angelIcon.png; path = ../angelIcon.png; sourceTree = "<group>"; };
+		ACEDC7F518BA0B0800A96FB5 /* angel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = angel2.png; path = ../angel2.png; sourceTree = "<group>"; };
 		B004AAC118B75504003FA812 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		B06546F418B75EF30021AF58 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B092B41C18B670A50013653D /* PairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairView.h; sourceTree = "<group>"; };
@@ -120,8 +124,10 @@
 				AC28D84918B8C2CF0054DA9F /* BLEDevice.m */,
 				AC28D84A18B8C2CF0054DA9F /* BLEUtility.h */,
 				AC28D84B18B8C2CF0054DA9F /* BLEUtility.m */,
+				ACEDC7F318BA0AB100A96FB5 /* angelIcon.png */,
 				AC28D84C18B8C2CF0054DA9F /* deviceCellTemplate.h */,
 				AC28D84D18B8C2CF0054DA9F /* deviceCellTemplate.m */,
+				ACEDC7F518BA0B0800A96FB5 /* angel2.png */,
 				AC28D84E18B8C2CF0054DA9F /* deviceSelector.h */,
 				AC28D84F18B8C2CF0054DA9F /* deviceSelector.m */,
 				AC28D85018B8C2CF0054DA9F /* Sensors.h */,
@@ -170,8 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				B092B42318B68ED70013653D /* Default.png */,
-				B092B41F18B683370013653D /* pair.png */,
 				B0C7104818B65A5800245567 /* AppDelegate.h */,
+				B092B41F18B683370013653D /* pair.png */,
 				B0C7104918B65A5800245567 /* AppDelegate.m */,
 				B0C7104B18B65A5800245567 /* Main_iPhone.storyboard */,
 				B0C7104E18B65A5800245567 /* Main_iPad.storyboard */,
@@ -275,11 +281,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEDC7F718BA2CB800A96FB5 /* Main_iPhone.storyboard in Resources */,
+				ACEDC7F818BA2CB800A96FB5 /* Main_iPad.storyboard in Resources */,
 				B092B42018B683370013653D /* pair.png in Resources */,
-				B0C7105018B65A5800245567 /* Main_iPad.storyboard in Resources */,
 				B0C7105518B65A5900245567 /* Images.xcassets in Resources */,
 				B092B42418B68ED70013653D /* Default.png in Resources */,
-				B0C7104D18B65A5800245567 /* Main_iPhone.storyboard in Resources */,
+				ACEDC7F418BA0AB100A96FB5 /* angelIcon.png in Resources */,
+				ACEDC7F618BA0B0800A96FB5 /* angel2.png in Resources */,
 				B0C7104418B65A5800245567 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
