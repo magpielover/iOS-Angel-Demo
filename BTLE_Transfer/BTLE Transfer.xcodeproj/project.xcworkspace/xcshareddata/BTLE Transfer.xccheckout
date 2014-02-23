@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F15F5D69-08D5-44F4-8A36-9086724EAA35</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BTLE Transfer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9AE2A5FD-FEAB-4935-BDDF-1141C0F52737</key>
+		<string>https://github.com/magpielover/iOS-Angel-Demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BTLE_Transfer/BTLE Transfer.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9AE2A5FD-FEAB-4935-BDDF-1141C0F52737</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/magpielover/iOS-Angel-Demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9AE2A5FD-FEAB-4935-BDDF-1141C0F52737</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9AE2A5FD-FEAB-4935-BDDF-1141C0F52737</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS Angel Demo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
