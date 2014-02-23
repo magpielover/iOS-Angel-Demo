@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>1FE6D097-1D47-4139-B983-50AD91486562</string>
+	<string>C122F2FF-C50E-49D2-90FF-4EB7BE0D0FE4</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SensorTagEX</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>ADEEA70C-E6E3-49CC-BDBE-23BC67E53F46</key>
-		<string>ssh://admin.stalliance.no//media/Elements/GIT/Software/iOS_Projects/SensorTagEx.git</string>
+		<key>9AE2A5FD-FEAB-4935-BDDF-1141C0F52737</key>
+		<string>https://github.com/magpielover/iOS-Angel-Demo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SensorTagEX.xcodeproj/project.xcworkspace</string>
+	<string>SensorTag/Sensor Example Source Code 1.1.0/SensorTagEX.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>ADEEA70C-E6E3-49CC-BDBE-23BC67E53F46</key>
-		<string>../..</string>
+		<key>9AE2A5FD-FEAB-4935-BDDF-1141C0F52737</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://admin.stalliance.no//media/Elements/GIT/Software/iOS_Projects/SensorTagEx.git</string>
+	<string>https://github.com/magpielover/iOS-Angel-Demo.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>ADEEA70C-E6E3-49CC-BDBE-23BC67E53F46</string>
+	<string>9AE2A5FD-FEAB-4935-BDDF-1141C0F52737</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>ADEEA70C-E6E3-49CC-BDBE-23BC67E53F46</string>
+			<string>9AE2A5FD-FEAB-4935-BDDF-1141C0F52737</string>
 			<key>IDESourceControlWCCName</key>
-			<string>SensorTagEx</string>
+			<string>iOS Angel Demo</string>
 		</dict>
 	</array>
 </dict>
